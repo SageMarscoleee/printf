@@ -27,6 +27,5 @@ int print_bin(va_list args)
 
 	for (r = p - 1; r >= 0; r--)
 		_putchar(bin[r] + '0');
-
 	return (p);
 }

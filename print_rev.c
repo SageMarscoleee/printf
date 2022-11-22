@@ -24,6 +24,5 @@ int print_rev(va_list args)
 		;
 	for (j = i - 1; j >= 0; j--)
 		_putchar(str[j]);
-
 	return (i);
 }

@@ -26,6 +26,5 @@ int print_addr(va_list args)
 	_putchar('0');
 	_putchar('x');
 	count = print_HEX(addr, 12, 0);
-
 	return (2 + count);
 }

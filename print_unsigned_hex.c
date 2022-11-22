@@ -178,6 +178,5 @@ int print_short_unsigned_hex(va_list args)
 			_putchar((hex[r] % 10) + 'a');
 		}
 	}
-
 	return (p);
 }

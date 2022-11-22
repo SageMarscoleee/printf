@@ -128,6 +128,5 @@ int print_hash_octal(va_list args)
 	}
 	for (r = p - 1; r >= 0; r--)
 		_putchar(oct[r] + '0');
-
 	return (p + 1);
 }

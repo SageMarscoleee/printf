@@ -178,6 +178,5 @@ int print_hash_HEX(va_list args)
 			_putchar((hex[r] % 10) + 'A');
 		}
 	}
-
 	return (p + 2);
 }

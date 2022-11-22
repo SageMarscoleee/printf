@@ -107,6 +107,5 @@ int print_short_unsigned_dec(va_list args)
 	/* prints the arr backwards, and returns the num of elements printed */
 	for (j = i - 1; j > -1; j--, count++)
 		_putchar(arr[j] + '0');
-
 	return (count);
 }
