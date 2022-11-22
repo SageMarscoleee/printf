@@ -1,7 +1,6 @@
 #include "main.h"
 
 /************************* PRINT CHAR *************************/
-
 /**
  * print_char - Prints a char
  * @types: List a of arguments
@@ -11,7 +10,7 @@
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
- */
+ */ 
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -35,7 +34,6 @@ int print_string(va_list types, char buffer[],
 {
 	int length = 0, i;
 	char *str = va_arg(types, char *);
-
 	UNUSED(buffer);
 	UNUSED(flags);
 	UNUSED(width);
@@ -65,6 +63,7 @@ int print_string(va_list types, char buffer[],
 		}
 		else
 		{
+
 			for (i = width - length; i > 0; i--)
 				write(1, " ", 1);
 			write(1, &str[0], length);
@@ -129,12 +128,13 @@ int print_int(va_list types, char buffer[],
 		num = (unsigned long int)((-1) * n);
 		is_negative = 1;
 	}
+	
 
 	while (num > 0)
 	{
 		buffer[i--] = (num % 10) + '0';
 		num /= 10;
-	}	}
+	}
 
 	i++;
 
